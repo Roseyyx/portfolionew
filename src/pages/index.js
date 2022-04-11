@@ -36,39 +36,39 @@ export default function Home() {
                 <div className={styles.grid}>
                     <div className={styles.griditem}>
                         <h2>HTML5</h2>
-                        <img src="/html5.svg" alt="HTML5" />
+                        <Image src="/html5.svg" alt="HTML5" width={"200"} height={"200"}/>
                     </div>
                     <div className={styles.griditem}>
                         <h2>CSS3</h2>
-                        <img src="/css.svg" alt="CSS3" />
+                        <Image src="/css.svg" alt="CSS3" width={"200"} height={"200"}/>
                     </div>
                     <div className={styles.griditem}>
                         <h2>JavaScript ECMA6</h2>
-                        <img src="/javascript.svg" alt="JavaScript" />
+                        <Image src="/javascript.svg" alt="JavaScript" width={"200"} height={"200"}/>
                     </div>
                     <div className={styles.griditem}>
                         <h2>NEXT.js</h2>
-                        <img src="/next.svg" alt="NEXT.js" />
+                        <Image src="/next.svg" alt="NEXT.js" width={"200"} height={"200"}/>
                     </div>
                     <div className={styles.griditem}>
                         <h2>Node.js</h2>
-                        <img src="/node.svg" alt="Node.js" />
+                        <Image src="/node.svg" alt="Node.JS" width={"200"} height={"200"}/>
                     </div>
                     <div className={styles.griditem}>
                         <h2>GraphQL</h2>
-                        <img src="/graphql.svg" alt="GraphQL" />
+                        <Image src="/graphql.svg" alt="GraphQL" width={"200"} height={"200"}/>
                     </div>
                     <div className={styles.griditem}>
                         <h2>Express.js</h2>
-                        <img src="/express.svg" alt="Express.js" />
+                        <Image src="/express.svg" alt="Express.js" width={"200"} height={"200"}/>
                     </div>
                     <div className={styles.griditem}>
                         <h2>MongoDB</h2>
-                        <img src="/mongodb.svg" alt="MongoDB" />
+                        <Image src="/mongodb.svg" alt="MongoDB" width={"200"} height={"200"}/>
                     </div>
                     <div className={styles.griditem}>
                         <h2>MySQL</h2>
-                        <img src="/mysql.svg" alt="MySQL" />
+                        <Image src="/mysql.svg" alt="MySQL" width={"200"} height={"200"}/>
                     </div>
                 </div>
 
