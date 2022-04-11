@@ -1,0 +1,53 @@
+.main{
+    display: grid;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background-image: linear-gradient(to right, white, white 50%, #111 50%, #111);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20rem;
+}
+
+.rechts{
+    color: white;
+}
+
+.divcontainer h2{
+    position: relative;
+    top: -8rem;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.divcontainer p{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px){
+
+    .main{
+        background: none;
+    }
+    .container{
+        grid-template-columns: 1fr;
+        background-color: white;
+        gap: 4em;
+    }
+
+    .divcontainer h2{
+        top: 0;
+    }
+
+    .rechts{
+        background-color: #111;
+    }
+}

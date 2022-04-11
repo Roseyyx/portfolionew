@@ -6,14 +6,14 @@ const NavBar = () => {
         <div className={styles.container}>
             <div className={styles.wrapper}>
                 <li>
-                    <Link href="">
+                    <Link href="/">
                         <a className={styles.navlink}>
                             Home
                         </a>
                     </Link>
                 </li>
                 <li>
-                    <Link href="">
+                    <Link href="/about">
                         <a className={styles.navlink}>
                             About Me
                         </a>
