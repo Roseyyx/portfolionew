@@ -1,7 +1,6 @@
 .container{
-    left: 0;
+    right: 0;
     top: 0;
-    width: 100%;
     position: fixed;
     color: var(--textwit);
     padding: 0 1.5rem;
@@ -21,7 +20,7 @@
 
 .navlink{
     color: white;
-    margin-right: 3em;
+    margin-right: 2em;
     transition: all .4s ease;
     text-decoration: none;
     text-transform: uppercase;
@@ -30,7 +29,7 @@
 
 .navlink:hover{
     color: black;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: .7px;
     -webkit-text-stroke-color: white;
 }
 

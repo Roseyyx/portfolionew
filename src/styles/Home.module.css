@@ -1,3 +1,4 @@
+/*Hoofd Titel text*/
 .main{
     display: grid;
     position: relative;
@@ -15,7 +16,6 @@
     font-size: 64px;
     font-weight: bold;
 }
-
 
 #titel:hover{
     letter-spacing: 2px;
@@ -36,6 +36,24 @@
     font-size: 28px;
 }
 
+.arrow{
+    position: absolute;
+    justify-self: center;
+    margin-top: 40rem;
+}
+
+.arrow svg{
+    transition: 0.5s all;
+}
+
+.arrow svg:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/*Hoofd Titel text*/
+
+/*Korte info section*/
 .info{
     display: grid;
     position: relative;
@@ -68,7 +86,9 @@
 .rechts{
     color: black;
 }
+/*Korte info section*/
 
+/*Talen kennis section*/
 .languages{
     display: grid;
     position: relative;
@@ -76,6 +96,7 @@
     justify-content: center;
     min-height: 100vh;
     text-align: center;
+    margin-bottom: 5rem;
 }
 
 .wrapper h1{
@@ -94,4 +115,36 @@
     min-height: 300px;
     max-height: 300px;
     box-shadow: 0 0 12px 1px rgba(0,0,0,0.5);
+}
+
+.griditem img{
+    max-height: 200px;
+    max-width: 200px;
+}
+/*Talen kennis section*/
+
+/*Responsive*/
+/*make a media query for mobile*/
+@media screen and (max-width: 768px){
+
+    .info{
+        background: none;
+    }
+
+    .infocontainer{
+        grid-template-columns: 1fr;
+        background: #111;
+        gap: 4rem;
+    }
+
+    .rechts{
+        background: #fff;
+    }
+
+    .arrow{
+        margin-top: 27rem;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+    }
 }

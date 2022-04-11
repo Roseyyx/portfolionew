@@ -10,8 +10,15 @@ export default function Home() {
                 <h1 id={styles.titel}>Sverre <span>van</span> Hoepen</h1>
                 <p>Full-Stack Developer</p>
             </div>
+            <div className={styles.arrow}>
+                <a href={"#info"}>
+                    <svg width="70" height="55" viewBox="-2.5 -5 75 60" preserveAspectRatio="none">
+                        <path d="M0,0 l35,50 l35,-50" fill="none" stroke="black" stroke-linecap="round" stroke-width="5" />
+                    </svg>
+                </a>
+            </div>
         </section>
-        <section className={styles.info}>
+        <section className={styles.info} id={"info"}>
             <div className={styles.infocontainer}>
                 <div className={styles.grid1}>
                     <h2>Full-Stack</h2>
@@ -29,39 +36,39 @@ export default function Home() {
                 <div className={styles.grid}>
                     <div className={styles.griditem}>
                         <h2>HTML5</h2>
-                        <p></p>
+                        <img src="/html5.svg" alt="HTML5" />
                     </div>
                     <div className={styles.griditem}>
                         <h2>CSS3</h2>
-                        <p></p>
+                        <img src="/css.svg" alt="CSS3" />
                     </div>
                     <div className={styles.griditem}>
                         <h2>JavaScript ECMA6</h2>
-                        <p></p>
+                        <img src="/javascript.svg" alt="JavaScript" />
                     </div>
                     <div className={styles.griditem}>
                         <h2>NEXT.js</h2>
-                        <p></p>
+                        <img src="/next.svg" alt="NEXT.js" />
                     </div>
                     <div className={styles.griditem}>
                         <h2>Node.js</h2>
-                        <p></p>
+                        <img src="/node.svg" alt="Node.js" />
                     </div>
                     <div className={styles.griditem}>
-                        <h2>REST</h2>
-                        <p></p>
+                        <h2>GraphQL</h2>
+                        <img src="/graphql.svg" alt="GraphQL" />
                     </div>
                     <div className={styles.griditem}>
                         <h2>Express.js</h2>
-                        <p></p>
+                        <img src="/express.svg" alt="Express.js" />
                     </div>
                     <div className={styles.griditem}>
                         <h2>MongoDB</h2>
-                        <p></p>
+                        <img src="/mongodb.svg" alt="MongoDB" />
                     </div>
                     <div className={styles.griditem}>
                         <h2>MySQL</h2>
-                        <p></p>
+                        <img src="/mysql.svg" alt="MySQL" />
                     </div>
                 </div>
 
