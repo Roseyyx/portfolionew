@@ -1,116 +1,97 @@
-.container {
-  padding: 0 2rem;
+.main{
+    display: grid;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#titel{
+    transition: .4s all;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+.container h1{
+    font-size: 64px;
+    font-weight: bold;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+
+#titel:hover{
+    letter-spacing: 2px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.container span{
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.container p {
+    position: relative;
+    top: -4rem;
+    font-size: 28px;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+.info{
+    display: grid;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    text-align: center;
+    background-image: linear-gradient(to right, #111, #111 50%, white 50%, white);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 24px 4px rgba(0,0,0,0.5);
+    color: white;
 }
 
-.title,
-.description {
-  text-align: center;
+.infocontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20rem;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+.infocontainer h2{
+    font-size: 32px;
+    font-weight: bold;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+.infocontainer p{
+    max-width: 400px;
 }
 
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+.rechts{
+    color: black;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.languages{
+    display: grid;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.wrapper h1{
+    font-size: 64px;
+    font-weight: bold;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.griditem{
+    min-width: 300px;
+    min-height: 300px;
+    max-height: 300px;
+    box-shadow: 0 0 12px 1px rgba(0,0,0,0.5);
 }
