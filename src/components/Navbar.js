@@ -20,7 +20,7 @@ const NavBar = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link href="">
+                    <Link href="/projects">
                         <a className={styles.navlink}>
                             Projects
                         </a>
