@@ -11,6 +11,7 @@ export default async function(req, res) {
         res.status(400).json({
             message: "User already exists"
         })
+        return;
     }
 
     let NewUser = new User({
@@ -21,11 +22,13 @@ export default async function(req, res) {
     try {
         const savedUser = await NewUser.save();
         res.status(200).json(savedUser);
+        return;
     } catch (error) {
         console.log(error);
         res.status(500).json({
             message: "Internal server error"
         })
+        return;
     }
 
 }
