@@ -54,7 +54,7 @@ export default function Projects() {
                             <span>Login and Register</span>
                         </div>
                         <p className={styles.newsposttext}>Made with NEXT.js and MongoDB </p>
-                        <Link href="/account"><a className={styles.newspostcta}>Link</a></Link>
+                        <Link href="/login"><a className={styles.newspostcta}>Link</a></Link>
                     </div>
                 </div>
             </section>
