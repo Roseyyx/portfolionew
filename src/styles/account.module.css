@@ -8,60 +8,54 @@
     padding: 0 1.5rem;
 }
 
-.login h1{
+
+.wrapper h1{
     font-size: 64px;
     font-weight: bold;
 }
 
-.login form{
+.wrapper button{
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    color: #fff;
+    background: black;
+    border-radius: .8rem;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+.wrapper button:hover{
+    transform: scale(1.1);
+    border: 1px solid black;
+    background: none;
+    color: black;
+}
+
+.wrapper form{
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.login input{
-    padding: 20px 10px;
-    border-radius: 20px;
-    margin-bottom: 3rem;
-    color: black;
-    font-size: 20px;
+.wrapper input{
+    display: inline-block;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background: black;
+    border-radius: .8rem;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: all .5s ease;
 }
 
-.knoppen button{
-    border: none;
-    background: #111;
-    color: white;
-    padding: 10px 25px;
-    border-radius: 5px;
-    transition: 0.3s all;
-    font-size: 16px;
-}
-
-.knoppen button:hover{
-    border: 1px solid #111;
+.wrapper input:hover{
+    transform: scale(1.1);
+    border: 1px solid black;
     background: none;
     color: black;
-    cursor: pointer;
-}
-
-.knoppen input{
-    border: none;
-    background: #111;
-    color: white;
-    padding: 10px 25px;
-    border-radius: 5px;
-    transition: 0.3s all;
-    font-size: 16px;
-}
-
-.knoppen button:hover{
-    border: 1px solid #111;
-    background: none;
-    color: black;
-    cursor: pointer;
-}
-
-.knoppen{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
 }

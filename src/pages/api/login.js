@@ -1,24 +1,22 @@
 import jwt from 'jsonwebtoken';
 import dbconnect from "../../db/connect";
 import User from "../../db/models/User";
-const KEY = 'afghbdhjgfujhdijgdfk';
+import bcrypt from "bcryptjs";
 
 dbconnect();
 export default async function (req, res) {
-    const {email, password} = req.body;
 
-    let CheckUser = await User.findOne({email: email, password: password});
+    const {email} = req.body;
 
-    try {
-        if (CheckUser){
-            res.status(200).json("Logged In!");
-        } else {
-            res.status(401).json("Invalid Credentials");
-        }
-    } catch (error) {
-        console.log(error);
-        res.status(500).json({
-            message: 'Server error'
+    let FindUser = await User.findOne({email: email});
+    let password = await bcrypt.compare(req.body.password, FindUser.password);
+    if (password){
+        return res.status(200).json({
+            user: FindUser
+        });
+    } else {
+        return res.status(401).json({
+            message: 'Invalid email or password'
         })
     }
 

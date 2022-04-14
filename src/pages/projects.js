@@ -46,7 +46,7 @@ export default function Projects() {
                 </div>
                 <div className={styles.newspost}>
                     <div className={styles.newspostimg}>
-
+                        <Image className={styles.image} src="/user.png" alt="User System" layout={"fill"}/>
                     </div>
                     <div className={styles.newspostinfo}>
                         <h1 className={styles.newsposttitle}>User System</h1>
@@ -55,6 +55,19 @@ export default function Projects() {
                         </div>
                         <p className={styles.newsposttext}>Made with NEXT.js and MongoDB </p>
                         <Link href="/login"><a className={styles.newspostcta}>Link</a></Link>
+                    </div>
+                </div>
+                <div className={styles.newspost}>
+                    <div className={styles.newspostimg}>
+
+                    </div>
+                    <div className={styles.newspostinfo}>
+                        <h1 className={styles.newsposttitle}>Dashboard</h1>
+                        <div className={styles.newspostdate}>
+                            <span>Find user by username and change their username</span>
+                        </div>
+                        <p className={styles.newsposttext}>Made with NEXT.js and MongoDB </p>
+                        <Link href="/dashboard"><a className={styles.newspostcta}>Link</a></Link>
                     </div>
                 </div>
             </section>
