@@ -24,7 +24,7 @@ export default async function(req, res) {
     try {
         const savedUser = await NewUser.save();
         return res.status(201).json({
-            message: savedUser
+            message: "Created new user"
         });
     } catch (error) {
         return res.status(500).json({
