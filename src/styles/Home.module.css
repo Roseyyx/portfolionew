@@ -106,22 +106,109 @@
 
 .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 4rem;
 }
 
 .griditem{
     min-width: 300px;
-    min-height: 300px;
-    max-height: 300px;
-    box-shadow: 0 0 12px 1px rgba(0,0,0,0.5);
+    min-height: 200px;
+    max-height: 200px;
 }
 
 .griditem img{
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 150px;
+    max-width: 150px;
 }
 /*Talen kennis section*/
+
+/*Contact section*/
+
+.contact{
+    display: grid;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.contact h1{
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.contact form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "name name . Subject Subject"
+    ". . . . ."
+    "Email Email . socials socials"
+    ". . . . ."
+    "Message Message Message Message Message"
+    "Message Message Message Message Message"
+    "Message Message Message Message Message"
+    ". . . . ."
+    ". . . buttons buttons";
+}
+
+
+.contact form input, .contact textarea{
+    font-size: 24px;
+    padding: 1rem;
+    border: none;
+    border-bottom: 2px solid black;
+    background: none;
+    outline: none;
+    color: black;
+}
+.name { grid-area: name; }
+.Email { grid-area: Email; }
+.Subject { grid-area: Subject; }
+.Message {
+    grid-area: Message;
+    resize: none;
+}
+.socials { grid-area: socials; }
+.buttons {
+    grid-area: buttons;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    color: #fff;
+    background: black;
+    border-radius: .8rem;
+    text-decoration: none;
+    transition: all .5s ease;
+    border: none;
+}
+
+.buttons:hover{
+    background: #888;
+    color: black;
+    cursor: pointer;
+}
+
+.socials{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.socials svg{
+    position: relative;
+    top: 10px;
+    transition: 0.5s all;
+}
+
+.socials svg:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/*Contact section*/
 
 /*Responsive*/
 /*make a media query for mobile*/

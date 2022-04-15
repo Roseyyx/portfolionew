@@ -32,6 +32,34 @@
     font-size: 18px;
 }
 
+.knopje{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.knopje button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: .5rem 3rem;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+.knopje button:hover{
+    border: 1px solid black;
+    transform: scale(1.1);
+    background-color: white;
+    color: white;
+    -webkit-text-stroke-width: .7px;
+    -webkit-text-stroke-color: black;
+}
+
 @media screen and (max-width: 768px){
 
     .main{
