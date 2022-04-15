@@ -124,6 +124,7 @@ export default function Home() {
         <section className={styles.contact}>
             <div className={styles.contactwrapper}>
                 <h1>Contact</h1>
+                <p>{alert}</p>
                 <form action="">
                     <input type="text" name="name" placeholder="Name" className={styles.name} value={name} onChange={e => setName(e.target.value)}/>
                     <input type="text" name="subject" placeholder="Subject" className={styles.Subject} required value={subject} onChange={e => setSubject(e.target.value)}/>

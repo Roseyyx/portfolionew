@@ -17,7 +17,7 @@ export default async function(req,res) {
     const mailOptions = {
         from: `sverrevhoepen@outlook.com`,
         to: 'sverrevhoepen@outlook.com',
-        bcc: `${name} <${email}>`,
+        cc: `${name} <${email}>`,
         subject: `${subject} | from: ${name}`,
         text: message,
     };
