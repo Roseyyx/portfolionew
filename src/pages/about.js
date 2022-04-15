@@ -11,9 +11,9 @@ export default function About() {
                     </div>
                     <div className={styles.divcontainer + " " + styles.rechts}>
                         <h2>Passion</h2>
-                        <p>I started very young with coding, not with websites, but more with game modifications. Now I've discovered my passion and that is making Websites/Web-Apps. I am very adaptive to learning new frameworks and/or new languages.</p>
+                        <p>I started very young with coding, not with websites, but more with game modifications. Now I have discovered my passion and that is making Websites/Web-Apps. I am very adaptive to learning new frameworks and/or new languages.</p>
                     </div>
-                    <a href={"/cv.pdf"}className={styles.knopje}><button>CV</button></a>
+                    <a href={"/cv.pdf"} className={styles.knopje}><button>CV</button></a>
                 </div>
             </section>
         </>
