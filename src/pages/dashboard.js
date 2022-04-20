@@ -6,7 +6,8 @@ export default function Dashboard() {
     const [username, setUsername] = useState('');
     const [message, setMessage] = useState('');
 
-    async function submitForm(){
+    async function submitForm(e){
+        e.preventDefault();
         const res = await fetch('/api/getUser', {
             method: 'POST',
             headers: {
@@ -22,7 +23,8 @@ export default function Dashboard() {
         }
     }
 
-    async function changeName(){
+    async function changeName(e){
+        e.preventDefault();
         if (username.length === 0){
             setMessage('No current user selected');
             return;

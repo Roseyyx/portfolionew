@@ -9,7 +9,8 @@ export default function Register() {
     const [password, setPassword] = useState('');
     const [message, setMessage] = useState('');
 
-    async function submitForm(){
+    async function submitForm(e){
+        e.preventDefault();
         if (email.length === 0 || username.length === 0 || password.length === 0){
             setMessage('Please fill in all fields');
             return;
