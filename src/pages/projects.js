@@ -33,7 +33,7 @@ export default function Projects() {
                 </div>
                 <div className={styles.newspost}>
                     <div className={styles.newspostimg}>
-
+                        <Image className={styles.image} src="/beroeps.png" alt="Beroeps" layout={"fill"}/>
                     </div>
                     <div className={styles.newspostinfo}>
                         <h1 className={styles.newsposttitle}>School Project</h1>
@@ -41,7 +41,7 @@ export default function Projects() {
                             <span>F1 Promotion Website</span>
                         </div>
                         <p className={styles.newsposttext}>Made with EJS, Node.JS, Express, REST, MongoDB, ECMAScript6 and CSS3</p>
-                        <a href="https://87244.ict-lab.nl/BeroepsP4/" className={styles.newspostcta}>Link</a>
+                        <a href="https://87244.ict-lab.nl/Beroeps" className={styles.newspostcta}>Link</a>
                     </div>
                 </div>
                 <div className={styles.newspost}>
